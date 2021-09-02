@@ -44,5 +44,9 @@ const displayResult = () => {
         bookList.innerHTML = html;
     })
     // clear input field
-   searchtxt.value = ''; 
+    searchtxt.value = ''; 
+    errorMsg.textContent = '';
+    bookList.textContent = '';
+    totalDataDisplay.textContent = '';
+
 };
