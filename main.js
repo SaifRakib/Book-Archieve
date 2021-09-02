@@ -23,12 +23,13 @@ const displayResult = () => {
                  html += `
                  <div class="book-info text-center">
                     <div class="book-image">
-                        <img src="https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="center" alt="Book Image">
+                        <img src="https://covers.openlibrary.org/b/id/${book.cover_i?book.cover_i:10909258}-M.jpg" class="center" alt="Book Image">
                     </div>
                     <div>
                     <h3>${book.title}</h3>
-                    <h6><span>by </span>${book.author_name}</h6>
-                    <p>First publish in ${book.first_publish_year}</p>
+                    <h6><span>by </span>${book.author_name?book.author_name:'Book has no author.'}</h6>
+                    <p>Publisher: ${book.publisher?book.publisher[0]:'Book has no publiser.'}</p>
+                    <p>First publish in ${book.first_publish_year?book.first_publish_year:'2000'}</p>
                     </div>
                 </div>
                 `;
