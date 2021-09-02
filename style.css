@@ -1,0 +1,47 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* button style */
+#search-btn{
+    background-color: rgb(119, 119, 119);
+    color: #ffffff;
+    transition: all linear .4s;
+}
+#search-btn:hover{
+    background-color: rgb(75, 75, 75);
+    color: #ffffff;
+}
+/* Book display */
+.book{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.book-info{
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+}
+.book-info span{
+    font-weight: 400;
+    color: #363636;
+}
+/* book image */
+.book-image img{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 250px;
+    width: 200px;
+}
+/* imgae center  */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
